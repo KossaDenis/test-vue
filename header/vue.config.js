@@ -4,6 +4,9 @@ const { ModuleFederationPlugin } = require("webpack").container;
 module.exports = {
   publicPath: "auto",
   configureWebpack: {
+    optimization: {
+      splitChunks: false,
+    },
     plugins: [
       new ModuleFederationPlugin({
         name: "header",
