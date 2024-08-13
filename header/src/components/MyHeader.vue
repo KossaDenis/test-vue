@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-    <h1>Header</h1>
+  <div class="headerBlock">
+    <h1 class="title">Header</h1>
     <p>Count: {{ count }}</p>
   </div>
 </template>
@@ -14,11 +14,14 @@ defineProps({
 </script>
 
 <style scoped>
-.header {
+.headerBlock {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 2px solid darkcyan;
-  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(56, 214, 116);
+}
+
+.title {
+  margin-right: 10px;
 }
 </style>

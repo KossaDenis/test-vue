@@ -1,7 +1,7 @@
 <template>
-  <div class="content">
+  <div class="contentBlock">
     <p>Count: {{ count }}</p>
-    <button class="increment" @click="increment">+</button>
+    <button class="incrementBtn" @click="increment">+</button>
   </div>
 </template>
 
@@ -13,17 +13,17 @@ const count = ref(0);
 
 const increment = () => {
   count.value++;
-  emit('countUpdated', count.value)
+  emit("countUpdated", count.value);
 };
 </script>
 
 <style scoped>
-.content {
+.contentBlock {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.increment {
+.incrementBtn {
   padding: 10px;
   width: 100px;
   margin-left: 10px;
