@@ -2,7 +2,6 @@ const path = require("path");
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
-  publicPath: "auto",
   configureWebpack: {
     optimization: {
       splitChunks: false,

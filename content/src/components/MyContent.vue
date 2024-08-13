@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <button @click="increment">+</button>
-    <p>{{ count }}</p>
+  <div class="content">
+    <p>Count: {{ count }}</p>
+    <button class="increment" @click="increment">+</button>
   </div>
 </template>
 
@@ -17,4 +17,15 @@ const increment = () => {
 };
 </script>
 
-<style></style>
+<style scoped>
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.increment {
+  padding: 10px;
+  width: 100px;
+  margin-left: 10px;
+}
+</style>
